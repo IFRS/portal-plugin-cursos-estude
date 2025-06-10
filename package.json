@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "wp-scripts build src/block.js",
+    "postbuild": "cp ./portal-plugin-cursos-estude.php build/portal-plugin-cursos-estude.php",
     "check-engines": "wp-scripts check-engines",
     "check-licenses": "wp-scripts check-licenses",
     "format": "wp-scripts format",

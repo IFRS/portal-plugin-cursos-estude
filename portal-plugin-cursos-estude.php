@@ -15,9 +15,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_action( 'init', function() {
   wp_register_script(
     'portal-plugin-cursos-estude_block-editor',
-    plugins_url( 'build/block.js', __FILE__ ),
+    plugins_url( 'block.js', __FILE__ ),
     array( 'wp-blocks', 'wp-element', 'wp-editor', 'wp-components' ),
-    filemtime( plugin_dir_path( __FILE__ ) . 'build/block.js' )
+    filemtime( plugin_dir_path( __FILE__ ) . 'block.js' )
   );
 
   // wp_register_style(
